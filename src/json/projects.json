@@ -1,0 +1,41 @@
+[
+     {
+        "id": "1",
+        "category": "website",
+        "name": "Hsiang Bakery",
+        "description": "MERN Stack 購物動態網站",
+        "video": "https://streamable.com/e/snm73x",
+        "year": "2023",
+        "language": "HTML / CSS / JavaScript",
+        "background": "參照 Udemy 線上課程 \"MERN eCommerce From Scratch\" 製作，並自行更改設計主題。網站內容為虛構的烘焙坊線上商店。",
+        "skill": "MERN Stack 動態網站，功能為購物車、商品評價、分頁、搜尋、用戶訂單資訊、後台管理商品用戶和訂單、結帳流程、PayPal。實作頁面為除 About 外的所有頁面。使用 Redux 管理。排版採用 Bootstrap 框架，支援 RWD。",
+        "link": "https://hsiang-bakery.vercel.app/",
+        "github": "https://github.com/hsiang2/hsiangBakery"
+    },
+    {
+        "id": "2",
+        "category": "website",
+        "name": "Hsiang Bakery",
+        "description": "MERN Stack 購物動態網站",
+        "video": "https://streamable.com/e/snm73x",
+        "year": "2023",
+        "language": "HTML / CSS / JavaScript",
+        "background": "參照 Udemy 線上課程 \"MERN eCommerce From Scratch\" 製作，並自行更改設計主題。網站內容為虛構的烘焙坊線上商店。",
+        "skill": "MERN Stack 動態網站，功能為購物車、商品評價、分頁、搜尋、用戶訂單資訊、後台管理商品用戶和訂單、結帳流程、PayPal。實作頁面為除 About 外的所有頁面。使用 Redux 管理。排版採用 Bootstrap 框架，支援 RWD。",
+        "link": "https://hsiang-bakery.vercel.app/",
+        "github": "https://github.com/hsiang2/hsiangBakery"
+    },
+    {
+        "id": "3",
+        "category": "website",
+        "name": "Hsiang Bakery",
+        "description": "MERN Stack 購物動態網站",
+        "video": "https://streamable.com/e/snm73x",
+        "year": "2023",
+        "language": "HTML / CSS / JavaScript",
+        "background": "參照 Udemy 線上課程 \"MERN eCommerce From Scratch\" 製作，並自行更改設計主題。網站內容為虛構的烘焙坊線上商店。",
+        "skill": "MERN Stack 動態網站，功能為購物車、商品評價、分頁、搜尋、用戶訂單資訊、後台管理商品用戶和訂單、結帳流程、PayPal。實作頁面為除 About 外的所有頁面。使用 Redux 管理。排版採用 Bootstrap 框架，支援 RWD。",
+        "link": "https://hsiang-bakery.vercel.app/",
+        "github": "https://github.com/hsiang2/hsiangBakery"
+    }
+]

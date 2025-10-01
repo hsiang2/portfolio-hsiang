@@ -1,0 +1,38 @@
+.item {
+    border: red 1px solid;
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 2rem 0;
+}
+
+.title {
+    color: #5D718E;
+    margin-bottom: 1rem;
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    /* font-family: 'DM Serif Display', serif; */
+}
+
+.description {
+    color: #5D718ED9;
+    font-family: "Arsenal", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .item {
+        width: 42.4rem;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+} 

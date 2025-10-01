@@ -1,0 +1,7 @@
+.background {
+    background-color: aquamarine;
+    background-image: url("/public/images/wall.png");
+    background-size: 180px 180px;
+    background-repeat: repeat;
+    height: 100%;
+}
