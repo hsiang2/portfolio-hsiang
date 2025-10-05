@@ -19,7 +19,7 @@ const ProjectList = ({ type }) => {
         const section = sectionRef.current
         const track = trackRef.current
 
-         const bg = section
+        //  const bg = section
          
         // track 總寬度 - 視窗寬度 = 應該水平移動的距離
         const totalX = track.scrollWidth - section.clientWidth
@@ -35,11 +35,11 @@ const ProjectList = ({ type }) => {
                 scrub: 0.3,        // 加上慣性，讓它滑順
                 anticipatePin: 1,  // 避免 pin 卡頓
                 invalidateOnRefresh: true,
-                 markers: true,     
+                //  markers: true,     
 
-                onUpdate: (self) => {
-                       bg.style.backgroundPositionX = `${-totalX * self.progress}px`
-                }
+                // onUpdate: (self) => {
+                //        bg.style.backgroundPositionX = `${-totalX * self.progress}px`
+                // }
             }
         })
 
@@ -53,9 +53,9 @@ const ProjectList = ({ type }) => {
            
                     <div ref={trackRef} className={styles.track}>
                         {targetProjects.map((p) => 
-                            <div key={p.id} className={styles.item}>
-                                <ProjectItem project={p}  />
-                            </div>
+                            // <div  className={styles.item}>
+                                <ProjectItem project={p} key={p.id}  />
+                            // </div>
                             
                         )}
                     </div>

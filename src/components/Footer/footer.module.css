@@ -36,6 +36,11 @@
 .footerBottom {
     /* font-family: 'Asap', sans-serif; */
     background-color: #5D718E;
+         background-image: url("/public/images/wall-footer.png"); 
+  background-size: 180px 180px;
+  background-repeat: repeat;   
+  background-position: 0 0;   
+
     color: #FAF7EF;
     display: flex;
     justify-content: center;

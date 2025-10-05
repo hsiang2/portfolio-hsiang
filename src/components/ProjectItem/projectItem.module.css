@@ -1,34 +1,78 @@
 .item {
-    border: red 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1.5rem;
+    /* border: red 1px solid; */
     width: 100%;
     
+    
     margin: 0 auto;
+   
+
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-image: url("/public/images/card.png"); 
+    background-size: 20rem;
+
+
+    color: #FAF7EF;
+    height: 100%;
+    max-width: 14rem;
+
+    /* width: 1rem; */
+    padding: 0.5rem;
+    /* margin-top: 4rem; */
+    background-color: #314461;
+    border-radius: 2px;
+    /* box-shadow: 2px 2px 4px rgb(37, 37, 37); */
+}
+
+.border {
     width: 100%;
-    padding: 3rem 2rem 0;
+    height: 100%;
+    border: solid 1px #FAF7EFB3;
+     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
-    color: #5D718E;
-    margin-bottom: 1rem;
+    /* color: #5D718E; */
+    margin-bottom: 0.5rem;
     font-family: "Cormorant", serif;
     font-weight: bold;
+    font-size: 1.5rem;
     /* font-family: 'DM Serif Display', serif; */
 }
 
 .description {
-    color: #5D718ED9;
+    /* color: #5D718ED9; */
     font-family: "Arsenal", sans-serif;
 }
 
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: end;
+    
+}
+
+.icon {
+    color: #5D718E;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #526EB7;
+}
+
+
 @media (min-width: 768px) {
     .item {
-        width: 42.4rem;
+        width: 50rem;
     }
     .content {
         display: flex;

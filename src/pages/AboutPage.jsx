@@ -10,7 +10,25 @@ const AboutPage = () => {
         <div className="mainLayout">
             <Header />
             <div className="layoutContent container">
-                About
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '2rem'
+                }}>
+                    <img src='/images/portrait.png' alt='portrait' width={150} />
+                    <h2 
+                    style={{
+                            fontFamily: 'Cormorant, serif',
+                            fontWeight: 'bold',
+                            fontSize: '2rem',
+                            opacity: '1'
+                        }}
+                    >
+                        Hsiang-Hsiang Tsai
+                    </h2>
+                </div>
+              
+              
                 {/* <AboutDetail /> */}
             </div>
             <Footer className="layoutFooter" />

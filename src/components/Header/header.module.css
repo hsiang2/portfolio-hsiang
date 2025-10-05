@@ -3,6 +3,10 @@
     position: fixed;
     width: 100%;
     background-color: #FAF7EF;
+         background-image: url("/public/images/wall-white.png"); 
+  /* background-size: 180px 180px; */
+  background-repeat: repeat;   
+  background-position: 0 0;   
 }
 
 .nav {

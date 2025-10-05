@@ -26,12 +26,12 @@
    position: relative;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 3rem;
   padding: 0 8vw;          
   will-change: transform;
 
 }
 
-.item {
-  /* flex: 0 0 70vw;   */
-}
+/* .item {
+  flex: 0 0 70vw;  
+} */
