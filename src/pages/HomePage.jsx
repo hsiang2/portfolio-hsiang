@@ -59,7 +59,18 @@ const HomePage = () => {
             }
             })
         })
-        return () => ctx.revert()
+        // return () => ctx.revert()
+
+
+        const onLoad = () => ScrollTrigger.refresh()
+        window.addEventListener("load", onLoad)
+        document.fonts?.ready?.then(() => ScrollTrigger.refresh())
+
+
+        return () => {
+            ctx.revert()
+            window.removeEventListener("load", onLoad)
+        }
     }, [])
       
       
