@@ -3,14 +3,15 @@ import { Tabs } from "antd"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import ProjectList from "../components/ProjectList"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const HomePage = () => {
-    
+    const [isReady, setIsReady] = useState(false)
+
     const items = [
         {
           key: 'website',
@@ -34,7 +35,17 @@ const HomePage = () => {
         // },
       ];
 
+  useEffect(() => {
+    const img = new Image()
+    img.src = "/images/wall-white.png"
+    img.onload = () => {
+      setIsReady(true)
+    }
+  }, [])
+
     useEffect(()=> {
+            // if (!isReady) return
+
 
         const ctx = gsap.context(() => {
             // 進場動畫（載入時執行一次）
@@ -71,11 +82,17 @@ const HomePage = () => {
             ctx.revert()
             window.removeEventListener("load", onLoad)
         }
-    }, [])
+    }, [isReady])
       
       
     return(
         <div className="mainLayout">
+             {/* loading */}
+            {!isReady && (
+                <div className="page-loader">
+                <div className="loader-dot" />
+                </div>
+            )}
             <Header />
             <div className="layoutContent">
                 <div id="titles" className="container" style={{paddingLeft: '1.25rem', paddingRight: '1.25rem'}}>

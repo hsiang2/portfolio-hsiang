@@ -4,14 +4,16 @@
 // import AboutDetail from "../components/AboutDetail"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import gsap from "gsap"
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const AboutPage = () => {
+    const [imgLoaded, setImgLoaded] = useState(false)
     useEffect(()=> {
+         if (!imgLoaded) return
 
         const ctx = gsap.context(() => {
             // 進場動畫（載入時執行一次）
@@ -37,7 +39,7 @@ const AboutPage = () => {
             // })
         })
         return () => ctx.revert()
-    }, [])
+    }, [imgLoaded])
 
     return(
         <div className="mainLayout">
@@ -49,9 +51,12 @@ const AboutPage = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '2rem'
+                    gap: '2rem',
+                    opacity: imgLoaded ? 1 : 0, 
                 }}>
-                    <img src='/images/portrait.png' alt='portrait' width={150} />
+                    <img src='/images/portrait.png' alt='portrait' width={150} 
+                        onLoad={() => setImgLoaded(true)}
+                    />
                     <div style={{
                         maxWidth: '40rem'
                         }}
